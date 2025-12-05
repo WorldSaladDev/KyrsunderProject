@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    color: #4dfff3;
+}
+
+/* ---- Header ---- */
+.header {
+    background: #161623;
+    border-bottom: 4px solid #4dfff3;
+    color: white;
+    padding: 12px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    margin-right: 24px;
+}
+
+.site-title {
+    font-size: 48px;
+}
+
+/* ---- Content ---- */
+body {
+    background: #0b0b12;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column; /* so footer can anchor correctly */
+    min-height: 100vh;      /* fills the screen */
+
+    justify-content: flex-start; /* default is fine; prevents vertical centering */
+    align-items: center;         /* centers the content horizontally */
+}
+
+.content {
+    color: white;
+    padding: 12px 128px;
+    font-family: "Segoe UI", sans-serif;
+
+    max-width: 900px;
+    min-width: 900px;
+    min-height: 100vh;
+    background: #161623;
+    box-shadow:
+        -12px 4px 10px rgba(0, 0, 0, 1),
+        12px 4px 10px rgba(0, 0, 0, 1);
+}
+
+hr {
+    margin: 24px 0px 24px 0px;
+}
+
+h2 {
+    margin-top: 12px;
+    font-size: 32px
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 128px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgb(186, 186, 186);
+}
+
+/* ---- Links Grid ---- */
+.grid {
+    margin: 12px 0px 12px 0px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.grid-item {
+    background: #101017;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    box-shadow: none;
+    min-height: 128px;
+    max-height: 128px;
+}
+
+.grid-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 18px #4dfff3;
+}
