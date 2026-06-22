@@ -14,38 +14,37 @@ a {
     color: white;
     padding: 12px 48px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
 
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    width: 120px;
+    .logo {
+    height: 120px;
     margin-right: 24px;
-}
+    }
 
-.site-title {
-    font-size: 48px;
+    .site-title {
+        font-size: 48px;
+    }
 }
 
 /* ---- Content ---- */
 body {
     background: #0b0b12;
+    background-image: url("./homepage_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
     font-family: sans-serif;
 }
 
 .content-wrapper {
     display: flex;
-    flex-direction: column; /* so footer can anchor correctly */
-    min-height: 100vh;      /* fills the screen */
+    flex-direction: column;
+    min-height: 100vh;
 
-    justify-content: flex-start; /* default is fine; prevents vertical centering */
-    align-items: center;         /* centers the content horizontally */
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .content {
@@ -93,12 +92,11 @@ h2 {
     border-radius: 12px;
     padding: 20px;
     text-align: center;
+    align-items: center;
     text-decoration: none;
     color: inherit;
     transition: transform 0.15s ease, box-shadow 0.15s ease;
     box-shadow: none;
-    min-height: 128px;
-    max-height: 128px;
 }
 
 .grid-item:hover {
