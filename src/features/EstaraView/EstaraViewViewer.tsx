@@ -1,5 +1,7 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, } from "react";
 import * as Cesium from "cesium";
+
+(window as any).CESIUM_BASE_URL = `${import.meta.env.BASE_URL}cesium/`;
 
 export default function GlobeViewer() {
   const ref = useRef<HTMLDivElement>(null);
@@ -35,7 +37,7 @@ export default function GlobeViewer() {
 
         appearance: new Cesium.MaterialAppearance({
           material: Cesium.Material.fromType("Image", {
-            image: "/maps/estara.svg",
+            image: import.meta.env.BASE_URL + "maps/estara.svg",
           }),
 
           flat: true

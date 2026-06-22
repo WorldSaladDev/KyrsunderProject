@@ -30,7 +30,7 @@ export default function HomePage() {
 
           <section className="grid">
             <Link className="grid-item" to="/">
-              <img src="/common_assets/kyrscodex_logo.svg" alt="KyrsCodex Logo" className="logo"/>
+              <img src={`${import.meta.env.BASE_URL}common_assets/kyrscodex_logo.svg`} alt="KyrsCodex Logo" className="logo"/>
               <h3>KyrsCodex</h3>
               <p>A collection of media recovered from the Kyrsunder universe.</p>
               <p>
@@ -39,7 +39,7 @@ export default function HomePage() {
             </Link>
 
             <Link className="grid-item" to="/estaraview">
-              <img src="/common_assets/estaraview_logo.svg" alt="Estaraview Logo" className="logo"/>
+              <img src={`${import.meta.env.BASE_URL}common_assets/estaraview_logo.svg`} alt="Estaraview Logo" className="logo"/>
               <h3>EstaraView</h3>
               <p>View Estara on a Google Earth-style globe.</p>
             </Link>
