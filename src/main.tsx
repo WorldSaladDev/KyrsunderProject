@@ -7,7 +7,7 @@ import "cesium/Build/Cesium/Widgets/widgets.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/KyrsunderProject">
       <App />
     </BrowserRouter>
   </StrictMode>
